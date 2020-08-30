@@ -1,0 +1,101 @@
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    
+<style>
+#edu{ 
+  display: inline-block;
+  border-radius: 4px;
+  background-color:lightgray ;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 410px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px; 
+
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body bgcolor="#fff2e6">
+<form name="calculator">
+    <center>
+      <h2><u>CALCULATOR</u></h2>
+      <input type="button" button class="button" style="vertical-align:middle"  value="%" onclick="dis('%')"/><span> </span></button>     
+<input type="button" button class="button" style="vertical-align:middle"   value="c" onclick="clr()"/>
+<input type="text"  style="vertical-align:middle" id="edu"/><br>
+<!-- clr() function will call clr to clear all value -->   
+            
+<input type="button" button class="button" style="vertical-align:middle"  value="7" onclick="dis('7')"/><span> </span></button>
+<input type="button" button class="button" style="vertical-align:middle"  value="8" onclick="dis('8')"><span> </span></button>
+<input type="button" button class="button" style="vertical-align:middle"  value="9" onclick="dis('9')"><span> </span></button>
+<input type="button" button class="button" style="vertical-align:middle"  value="*" onclick="dis('*') "><span> </span></button><br>
+<input type="button" button class="button" style="vertical-align:middle"  value="4" onclick="dis('4')"><span> </span></button>
+<input type="button" button class="button" style="vertical-align:middle"  value="5" onclick="dis('5')"><span> </span></button>
+<input type="button" button class="button" style="vertical-align:middle"  value="6" onclick="dis('6')"><span> </span></button>
+<input type="button" button class="button" style="vertical-align:middle"  value="+" onclick="dis('+')"><span> </span></button><br>
+<input type="button" button class="button" style="vertical-align:middle"  value="1" onclick="dis('1')"><span> </span></button>
+<input type="button" button class="button" style="vertical-align:middle"  value="2" onclick="dis('2')"><span> </span></button>
+<input type="button" button class="button" style="vertical-align:middle"  value="3" onclick="dis('3')"><span> </span></button>
+<input type="button" button class="button" style="vertical-align:middle"  value="-" onclick="dis('-')"><span> </span></button><br>
+<input type="button" button class="button" style="vertical-align:middle" value="/" onclick="dis('/')"/> </td>
+<input type="button" button class="button" style="vertical-align:middle" value="." onclick="dis('.')"/> </td>
+<input type="button" button class="button" style="vertical-align:middle" value="0" onclick="dis('0')"/> </td>
+<!-- Evaluating function call eval()-->
+<input type="button" button class="button" style="vertical-align:middle" value="=" onclick="solve()"/> </td>
+<script src="hi.js"></script> 
+</body>
+
+
+
+
+        
+        
+        
+</body>
+</html>
